@@ -1,0 +1,76 @@
+.floatingForm {
+  width: minmax(400px, 90%);
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.line {
+  width: 70px;
+  height: 4px;
+  background-color: #444;
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  font-size: 16px;
+}
+
+.formGroup input:focus {
+  border-bottom-color: var(--secondary-color);
+  outline: none;
+}
+
+.formGroup label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: #888;
+  font-size: 14px;
+  transition: 0.2s ease;
+  pointer-events: none;
+  background: #f9f9f9;
+  padding: 0 5px;
+}
+
+.formGroup input:focus + label,
+.formGroup input:not(:placeholder-shown):not([value=""]) + label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+
+.submitBtn {
+  width: 50%;
+  padding: 10px;
+  background: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: var(--secondary-color);
+}

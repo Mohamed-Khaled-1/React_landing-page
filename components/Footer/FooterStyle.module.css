@@ -1,0 +1,25 @@
+.bg_main {
+  background-color: var(--main-color) !important;
+}
+.bg_darker_main {
+  background-color: var(--darker-main-color);
+}
+.footer_icon {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer_icon:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+.footer_icon i {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

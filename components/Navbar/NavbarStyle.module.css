@@ -1,0 +1,24 @@
+
+.active{
+    background-color: var(--secondary-color) !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+    border-radius: 10px !important;
+
+}
+
+.bg_main{
+      background-color: var(--main-color) !important;
+      transition: top 0.4s ease-in-out;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+  
+}
+.hide {
+  top: -100px;
+}
